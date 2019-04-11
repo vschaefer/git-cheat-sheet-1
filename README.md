@@ -16,3 +16,13 @@ log/*.log
 ```
 
 To add just parts to the index we can use `git add -p` (`-p` as in "patch").
+
+## Disaster Recovery
+
+In case of deleted commits use `git reflog` and `git cherry-pick` to recover those commits:
+
+```
+$ git cherry-pick LOST_COMMIT_SHA1
+```
+
+**Note** Will be cleaned up once `git gc` ran.
