@@ -36,3 +36,17 @@ Use `git blame` to see **last** change for each line.
 Use `git show COMMIT_SHA1` to get detailed information about commit (including diff).
 
 Use `git log -S` to search in contents of commits.
+
+## Branches
+
+Branches are essential for any git workflow. To create a new branch run
+
+```
+$ git checkout -b BRANCH_NAME
+```
+
+To list all your branches you can run (the active branch will be marked with a `*`)
+
+```
+$ git branch
+```
