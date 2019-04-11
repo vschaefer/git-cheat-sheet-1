@@ -43,6 +43,9 @@ Branches are essential for any git workflow. To create a new branch run
 
 ```
 $ git checkout -b BRANCH_NAME
+
+$ git branch BRANCH_NAME
+$ git checkout BRANCH_NAME
 ```
 
 To list all your branches you can run (the active branch will be marked with a `*`)
@@ -58,3 +61,5 @@ Possible worklfow options:
 1. You can even squash the branch `git merge --squash`
 1. Use `git reset --soft` if you accidently added commits to `master`
 1. Make sure to merge/rebase `master` **before** merging your branch into `master`
+
+
